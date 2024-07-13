@@ -1,11 +1,15 @@
 
-import IplItem from "./components/ipldata/iplmatches";
-
+import IplItem from "./components/ipl/iplmatches";
+import Footer from "./components/ipl/footer";
+ 
     function App (){
       return(
         <>
     <IplItem></IplItem>
-          </>
+    <Footer></Footer>
+
+
+      </>
       )
     }
 
