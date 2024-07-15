@@ -7,14 +7,13 @@ const IplItem=()=>{
     const {title,source,Trophy}=Ipldata
 
      const calculatePercentage=(input)=>{
-        const base = 100
+        const base = 17
         let percentage=(input/base)*100
         return percentage
      }
     return(
 
         <>
-        {/* <CustomProgressBar scale={40}></CustomProgressBar>   */}
         <div className="navbar">
            <h2>Home</h2>
            <h2>About</h2>
@@ -29,8 +28,8 @@ const IplItem=()=>{
                     <img src={eachIpldata.source} alt="image" width={200} height={200}/>
                    
                     <h3>Trophies: {eachIpldata.Trophy}</h3>
-                    <p className ="card-price">Price: ${Product.price}</p>
-              <CustomProgressBar scale={calculatePercentage(product.price)}></CustomProgressBar>                
+                    {/* <p className ="card-price">Price: ${Product.price}</p> */}
+              <CustomProgressBar scale={calculatePercentage()}></CustomProgressBar>                
             </div>
             
     
