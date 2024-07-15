@@ -11,7 +11,7 @@ const Heading1 =(prop) => {
     let {title = "default"} = prop;   
     return <h1>{title}</h1>
     };
-     export const Heading3 = (prop) => {
+     export const Heading3 = (prop) =>{
         let {title = "default"} = prop;
         return <h1>{title}</h1>
     }
