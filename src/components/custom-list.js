@@ -1,11 +1,12 @@
 const CustomList = ({list}) =>{
     return (
-    <ol>
+    <ul>
     {list.map((eachItem) => (
         <li>{eachItem}</li>
+
     ))}
     
-    </ol>
+    </ul>
     );
 };
 
