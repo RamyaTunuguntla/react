@@ -1,15 +1,15 @@
-import Ipldata from "./ipldata";
+import Data from "./ipldata";
 import "./iplmatch.css"
 import Footer from "./footer";
-import CustomProgressBar from "./progressbar";
+import CustomProgressBar from "./progressbar.js";
 
 const IplItem=()=>{
-    const {title,source,Trophy}=Ipldata
+    // const {title,source,Trophy}=Data
 
      const calculatePercentage=(input)=>{
-        const base = 17
-        let percentage=(input/base)*100
-        return percentage
+        const base = 17;
+        let percentage = (input / base) * 100
+        return percentage;
      }
     return(
 
@@ -21,15 +21,14 @@ const IplItem=()=>{
         </div>
         <div className="grid">
             
-        {Ipldata.map((eachIpldata)=>(
+        {Data.map((eachTeam)=>(
             
             <div className="card">
-                    <h3>{eachIpldata.title}</h3>
-                    <img src={eachIpldata.source} alt="image" width={200} height={200}/>
+                    <h3>{eachTeam.title}</h3>
+                    <img src={eachTeam.source} alt={eachTeam.title} width={200} height={200}/>
                    
-                    <h3>Trophies: {eachIpldata.Trophy}</h3>
-                    {/* <p className ="card-price">Price: ${Product.price}</p> */}
-              <CustomProgressBar scale={calculatePercentage()}></CustomProgressBar>                
+                    <h3>Trophies: {eachTeam.Trophy}</h3>
+              <CustomProgressBar scale={calculatePercentage(eachTeam.Trophy)}></CustomProgressBar>                
             </div>
             
     
