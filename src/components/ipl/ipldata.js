@@ -1,4 +1,4 @@
-const Ipldata = [
+const Data = [
   {
       title:"Chennai super kings",
       source:"https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7ac1bdf3-5adc-46ff-9789-65209a39a04f_1600x900.jpeg",
@@ -46,4 +46,4 @@ const Ipldata = [
   }
 
 ]
-export default Ipldata;
+export default Data;
