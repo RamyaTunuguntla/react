@@ -1,5 +1,4 @@
-import CustomList from "./custom-list";
-
+import Ipldata from "./ipldata";
 
 const Footer = () => {
   return (
